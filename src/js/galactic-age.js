@@ -1,5 +1,13 @@
 export class SpaceAge {
-  constructor() {}
+  constructor(name, earth, mercury, venus, mars, jupiter, smoker) {
+    this.name = name;
+    this.earth = earth;
+    this.mercury = mercury;
+    this.venus = venus;
+    this.mars = mars;
+    this.jupiter = jupiter;
+    this.smoker = smoker;
+  }
 }
 /// A class that takes a persons age in human years and calculates their
 /// age depending on a corrosponding planet
