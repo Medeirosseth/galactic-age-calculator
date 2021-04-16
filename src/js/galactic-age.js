@@ -1,13 +1,7 @@
 export class SpaceAge {
-  constructor(name, earthAge, aveLifeExpectancy) {
+  constructor(name, earth) {
     this.name = name;
-    this.earth = earthAge;
-    this.aveLifeExpectancy = aveLifeExpectancy;
-  }
-
-  earthDays() {
-    const earthAge = this.earth * 365;
-    return earthAge;
+    this.earth = earth;
   }
 }
 
