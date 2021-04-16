@@ -1,26 +1,11 @@
 export class SpaceAge {
-  constructor(
-    name,
-    earthAge,
-    aveLifeExpectancy,
-    mercury,
-    venus,
-    mars,
-    jupiter,
-    smoker
-  ) {
+  constructor(name, earthAge, aveLifeExpectancy) {
     this.name = name;
     this.earth = earthAge;
-    this.mercury = mercury;
-    this.venus = venus;
-    this.mars = mars;
-    this.jupiter = jupiter;
     this.aveLifeExpectancy = aveLifeExpectancy;
-    this.smoker = smoker;
   }
-
-  earthDays() {}
 }
+
 /// user opens website
 /// inputs name and earth age
 /// returns name and earth age along with converted planet years

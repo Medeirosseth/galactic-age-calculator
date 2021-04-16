@@ -10,4 +10,11 @@ describe(`SpaceAge`, () => {
     };
     expect(spaceAge).toEqual(expected);
   });
+  beforeEach(() => {
+    const spaceAge = new SpaceAge("buzz", 1);
+  });
+
+  it(`should correctly convert 1 earthAge to 365 earthDays`, () => {
+    expect(spaceAge.earth).toEqual(365);
+  });
 });
