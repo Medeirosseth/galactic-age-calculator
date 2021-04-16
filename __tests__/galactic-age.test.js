@@ -1,17 +1,17 @@
 import { SpaceAge } from "./../src/js/galactic-age";
 
-describe(`SpaceAge()`, () => {
-  it(`creates a space age converter converter`, () => {
-    const age = new SpaceAge("buzz", 30, 15, 3, 10, 6, 3, -5);
+describe(`SpaceAge`, () => {
+  it("creates a SpaceAge constructor object", () => {
+    const spaceAge = new SpaceAge("buzz", 30, 15, 7, 5, 2, -10);
     const expected = {
-      name: "buzz",
+      name: `buzz`,
       earth: 30,
       mercury: 15,
-      venus: 3,
-      mars: 10,
-      jupiter: 6,
-      smoker: -5,
+      venus: 7,
+      mars: 5,
+      jupiter: 2,
+      smoker: -10,
     };
-    expect(new SpaceAge()).toEqual(expected);
+    expect(spaceAge).toEqual(expected);
   });
 });
