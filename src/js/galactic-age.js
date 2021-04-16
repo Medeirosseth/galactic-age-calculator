@@ -4,6 +4,11 @@ export class SpaceAge {
     this.earth = earthAge;
     this.aveLifeExpectancy = aveLifeExpectancy;
   }
+
+  earthDays() {
+    const earthAge = this.earth * 365;
+    return earthAge;
+  }
 }
 
 /// user opens website
