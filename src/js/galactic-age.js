@@ -18,6 +18,8 @@ export class SpaceAge {
     this.aveLifeExpectancy = aveLifeExpectancy;
     this.smoker = smoker;
   }
+
+  earthDays() {}
 }
 /// user opens website
 /// inputs name and earth age

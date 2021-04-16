@@ -5,7 +5,7 @@ describe(`SpaceAge`, () => {
     const spaceAge = new SpaceAge("buzz", 30, 78, 15, 7, 5, 2, -10);
     const expected = {
       name: `buzz`,
-      earthAge: 30,
+      earthAge: 1,
       mercury: 15,
       venus: 7,
       mars: 5,
