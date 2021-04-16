@@ -1,16 +1,16 @@
 export class SpaceAge {
   constructor(
     name,
-    earth,
+    earthAge,
+    aveLifeExpectancy,
     mercury,
     venus,
     mars,
     jupiter,
-    aveLifeExpectancy,
     smoker
   ) {
     this.name = name;
-    this.earth = earth;
+    this.earth = earthAge;
     this.mercury = mercury;
     this.venus = venus;
     this.mars = mars;
