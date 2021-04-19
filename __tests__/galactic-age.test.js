@@ -19,7 +19,9 @@ describe(`SpaceAge`, () => {
 
   it(" should divide a mercury year (88 days) into earth days (365) 365/88 = 4.147", () => {
     const spaceAge = new SpaceAge("buzz", 1, 88);
-    const expected = spaceAge.mercury / spaceAge.earth;
+    const earthDays = spaceAge.earth * 365;
+    const expected = earthDays / spaceAge.mercury;
+    console.log(expected);
     expect(4).toEqual(expected);
   });
 });
