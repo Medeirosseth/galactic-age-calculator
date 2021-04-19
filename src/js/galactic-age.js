@@ -2,12 +2,16 @@ export class SpaceAge {
   constructor(name, earth) {
     this.name = name;
     this.earth = earth;
-    this.mercury = 88;
   }
 
   earthCalendar() {
     const earthDays = this.earth * 365;
     return earthDays;
+  }
+
+  mercuryAge() {
+    const mercuryAge = this.earthCalendar() / this.mercury;
+    return mercuryAge;
   }
 }
 
