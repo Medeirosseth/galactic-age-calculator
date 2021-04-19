@@ -2,11 +2,12 @@ export class SpaceAge {
   constructor(name, earth) {
     this.name = name;
     this.earth = earth;
+    this.mercury = 88;
   }
 
   earthCalendar() {
-    // const earthDays = this.earth * 365;
-    // return earthDays;
+    const earthDays = this.earth * 365;
+    return earthDays;
   }
 }
 
@@ -14,7 +15,6 @@ export class SpaceAge {
 /// inputs name and earth age
 /// returns name and earth age along with converted planet years
 /// template literals would be a good way about returning each year
-/// create an age input that breaks down age to days * 365(in a year)
 /// a mercury year is 88 earth days
 /// a venus year is 224.7 earth days
 /// a mars year is 687 earth days
