@@ -3,6 +3,11 @@ export class SpaceAge {
     this.name = name;
     this.earth = earth;
   }
+
+  earthCalendar() {
+    // const earthDays = this.earth * 365;
+    // return earthDays;
+  }
 }
 
 /// user opens website
