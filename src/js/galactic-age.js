@@ -7,6 +7,10 @@ export class SpaceAge {
     let mercuryAge = Math.floor(this.earthAge / 0.24);
     return mercuryAge;
   }
+
+  venusAge() {
+    let venusAge = Math.floor(this.earthAge / 0.62);
+  }
 }
 
 /// user opens website
