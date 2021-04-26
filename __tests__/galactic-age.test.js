@@ -1,25 +1,18 @@
 import { SpaceAge } from "./../src/js/galactic-age";
 
-describe(`SpaceAge`, () => {
-  it("creates a SpaceAge constructor object", () => {
-    const spaceAge = new SpaceAge("buzz", 1);
-    const expected = {
-      name: `buzz`,
-      earth: 1,
-    };
-    expect(spaceAge).toEqual(expected);
+describe("SpaceAge", () => {
+  let spaceAge;
+
+  beforeEach(() => {
+    spaceAge = new SpaceAge(30);
   });
 
-  it(`should correctly convert 1 earthAge to 365 earthDays`, () => {
-    const spaceAge = new SpaceAge("buzz", 1);
-    const expected = spaceAge.earth * 365;
-    expect(365).toEqual(expected);
+  it(`creates a SpaceAge constructor and adds earthAge property`, () => {
+    spaceAge = new SpaceAge();
+    expect(SpaceAge.earthAge).toEqual();
   });
 
-  it(" should divide a mercury year (88 days) into earth days (365) 365/88 = 4.147", () => {
-    const spaceAge = new SpaceAge("buzz", 1);
-    expect(earthCalendar()).toBeCloseTo(mercury());
+  it(`should correctly determine users age in mercury years from earth age`, () => {
+    expect(spaceAge.mercuryAge()).toEqual();
   });
-
-  it;
 });
