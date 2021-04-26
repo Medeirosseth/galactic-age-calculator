@@ -15,6 +15,7 @@ export class SpaceAge {
 
   marsAge() {
     let marsAge = Math.floor(this.earthAge / 1.88);
+    return marsAge;
   }
 }
 
