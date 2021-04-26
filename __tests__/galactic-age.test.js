@@ -15,7 +15,11 @@ describe("SpaceAge", () => {
     expect(spaceAge.mercuryAge()).toEqual(125);
   });
 
-  it(`it should corrrectly determine users age in venus years from earthAge`, () => {
+  it(`should corrrectly determine users age in venus years from earthAge`, () => {
     expect(spaceAge.venusAge()).toEqual(48);
+  });
+
+  it(`shoud correctly determine user age in mars years from earthAge`, () => {
+    expect(spaceAge.marsAge()).toEqual(15);
   });
 });
