@@ -1,6 +1,7 @@
 export class SpaceAge {
-  constructor(earthAge) {
+  constructor(earthAge, portlandLifeExpectancy) {
     this.earthAge = earthAge;
+    this.portlandLifeExpectancy = portlandLifeExpectancy;
   }
 
   mercuryAge() {
@@ -16,6 +17,16 @@ export class SpaceAge {
   marsAge() {
     let marsAge = Math.floor(this.earthAge / 1.88);
     return marsAge;
+  }
+
+  jupiterAge() {
+    let jupiterAge = Math.floor(this.earthAge / 11.86);
+    return jupiterAge;
+  }
+
+  mercuryLifeExpectancy() {
+    let mercuryLifeExpectancy = Math.floor(79.6 / 0.24);
+    let timeLeft = mercuryLifeExpectancy - this.mercuryAge();
   }
 }
 
