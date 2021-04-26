@@ -2,6 +2,11 @@ export class SpaceAge {
   constructor(earthAge) {
     this.earthAge = earthAge;
   }
+
+  mercuryAge() {
+    let mercuryAge = Math.floor(this.earthAge / 0.24);
+    return mercuryAge;
+  }
 }
 
 /// user opens website

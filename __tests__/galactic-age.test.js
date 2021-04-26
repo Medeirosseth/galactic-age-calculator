@@ -10,4 +10,8 @@ describe("SpaceAge", () => {
   it(`creates a SpaceAge constructor and adds earthAge property`, () => {
     expect(SpaceAge.earthAge).toEqual();
   });
+
+  it(`should correctly determine users age in mercury years from earth age`, () => {
+    expect(spaceAge.mercuryAge()).toEqual(125);
+  });
 });
