@@ -27,6 +27,7 @@ export class SpaceAge {
   mercuryLifeExpectancy() {
     let mercuryLifeExpectancy = Math.floor(79.6 / 0.24);
     let timeLeft = mercuryLifeExpectancy - this.mercuryAge();
+    return timeLeft;
   }
 }
 
