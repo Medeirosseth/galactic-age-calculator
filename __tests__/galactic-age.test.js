@@ -72,7 +72,7 @@ describe("SpaceAge", () => {
   it(`should determine how many years a user has lived passed their life expectancy on Jupiter`, () => {
     let spaceageOld = new SpaceAge(100, 79.6);
     expect(spaceageOld.jupiterLifeExpectancy()).toEqual(
-      "you have surpased your life ecpectancy by years"
+      "you surpased your life expectancy by 2 years"
     );
   });
 });
