@@ -54,4 +54,11 @@ describe("SpaceAge", () => {
       `you have 2 years left on this planet`
     );
   });
+
+  it(`should determine how many years a user has lived passed their life expectancy on mars`, () => {
+    let spaceageOld = new SpaceAge(100, 79.6);
+    expect(spaceageOld.marsLifeExpectancy()).toEqual(
+      " you have surpased your life expectancy by "
+    );
+  });
 });

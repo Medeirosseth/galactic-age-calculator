@@ -45,4 +45,6 @@ export class SpaceAge {
       return `you have ${timeLeft} years left on this planet`;
     }
   }
+
+  marsLifeExpectancy() {}
 }
