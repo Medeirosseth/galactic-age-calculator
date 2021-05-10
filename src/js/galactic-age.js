@@ -25,9 +25,14 @@ export class SpaceAge {
   }
 
   mercuryLifeExpectancy() {
-    let mercuryLifeExpectancy = Math.floor(79.6 / 0.24);
+    let mercuryLifeExpectancy = Math.floor(79 / 0.24);
     let timeLeft = mercuryLifeExpectancy - this.mercuryAge();
-    return timeLeft;
+    if (timeLeft < 0) {
+      let lifeExpectancy = timeLeft * -1;
+      return `you surpased your life expectancy by ${lifeExpectancy}`;
+    } else {
+      return `you have ${timeLeft} on this planet`;
+    }
   }
 }
 
