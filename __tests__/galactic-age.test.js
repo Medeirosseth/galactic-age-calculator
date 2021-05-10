@@ -34,10 +34,10 @@ describe("SpaceAge", () => {
     );
   });
 
-  it(`should return the amount have years you have left on mercury`, () => {
+  it(`should return the amount of years you have left on mercury`, () => {
     let spaceageYoung = new SpaceAge(30, 79.6);
     expect(spaceageYoung.mercuryLifeExpectancy()).toEqual(
-      `you have 204 on this planet`
+      `you have 204 years left on this planet`
     );
   });
 
@@ -45,6 +45,13 @@ describe("SpaceAge", () => {
     let spaceageOld = new SpaceAge(100, 79.6);
     expect(spaceageOld.venusLifeExpectancy()).toEqual(
       "you surpased your life expectancy by 289 years"
+    );
+  });
+
+  it(`should return the amount of years you have left on venus`, () => {
+    let spaceageYoung = new SpaceAge(30, 79.6);
+    expect(spaceageYoung.venusLifeExpectancy()).toEqual(
+      `you have 2 years left on this planet`
     );
   });
 });

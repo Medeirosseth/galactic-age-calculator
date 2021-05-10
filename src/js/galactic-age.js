@@ -31,7 +31,7 @@ export class SpaceAge {
       let lifeExpectancy = timeLeft * -1;
       return `you surpased your life expectancy by ${lifeExpectancy}`;
     } else {
-      return `you have ${timeLeft} on this planet`;
+      return `you have ${timeLeft} years left on this planet`;
     }
   }
 
@@ -42,7 +42,7 @@ export class SpaceAge {
       let lifeExpectancy = timeLeft * -1;
       return `you surpased your life expectancy by ${lifeExpectancy} years`;
     } else {
-      return `you have ${timeLeft} on this planet`;
+      return `you have ${timeLeft} years left on this planet`;
     }
   }
 }
