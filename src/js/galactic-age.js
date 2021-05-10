@@ -34,6 +34,8 @@ export class SpaceAge {
       return `you have ${timeLeft} on this planet`;
     }
   }
+
+  venusLifeExpectancy() {}
 }
 
 /// user opens website

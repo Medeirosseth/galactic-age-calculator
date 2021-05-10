@@ -27,7 +27,7 @@ describe("SpaceAge", () => {
     expect(spaceAge.jupiterAge()).toEqual(2);
   });
 
-  it(`should determine how many years a user has live passed  on mercury`, () => {
+  it(`should determine how many years a user has live passed their life expectancy on mercury`, () => {
     let spaceageOld = new SpaceAge(100, 79.6);
     expect(spaceageOld.mercuryLifeExpectancy()).toEqual(
       "you surpased your life expectancy by 87"
@@ -38,6 +38,13 @@ describe("SpaceAge", () => {
     let spaceageYoung = new SpaceAge(30, 79.6);
     expect(spaceageYoung.mercuryLifeExpectancy()).toEqual(
       `you have 204 on this planet`
+    );
+  });
+
+  it(`should determine how many years a user has lived passed their life expectancy on venus`, () => {
+    let spaceageOld = new SpaceAge(100, 79.6);
+    expect(spaceageOld.venusLifeExpectancy()).toEqual(
+      "you surpased your life expectancy by 289 years"
     );
   });
 });
