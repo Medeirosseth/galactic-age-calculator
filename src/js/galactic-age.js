@@ -35,25 +35,14 @@ export class SpaceAge {
     }
   }
 
-  venusLifeExpectancy() {}
+  venusLifeExpectancy() {
+    let venusLifeExpectancy = Math.floor(79 / 0.62);
+    let timeLeft = venusLifeExpectancy - this.mercuryAge();
+    if (timeLeft < 0) {
+      let lifeExpectancy = timeLeft * -1;
+      return `you surpased your life expectancy by ${lifeExpectancy} years`;
+    } else {
+      return `you have ${timeLeft} on this planet`;
+    }
+  }
 }
-
-/// user opens website
-/// inputs name and earth age
-/// returns name and earth age along with converted planet years
-/// template literals would be a good way about returning each year
-/// a mercury year is 88 earth days
-/// a venus year is 224.7 earth days
-/// a mars year is 687 earth days
-/// a jupiter year is 4,332.59 earth days
-/// a smoker on average lives 10 fewer years
-/// the average life expectancy of the United States is 78.54 years
-/// further exploration canada life expectancy 81.95 years
-/// further exploration United Kingdom life expectanct 81.26
-/// A class that takes a persons age in human years and calculates their
-/// age depending on a corrosponding planet
-/// mercury is .24 Earth years
-/// venus is .62 Earth years
-/// mars is .1.88 Earth years
-/// jupiter is 11.86 Earth years
-/// user inputs whether or not they are a smoker, smokers life expectancy is 10 years short than a non smoker
