@@ -44,21 +44,21 @@ describe("SpaceAge", () => {
   it(`should determine how many years a user has lived passed their life expectancy on venus`, () => {
     let spaceageOld = new SpaceAge(100, 79.6);
     expect(spaceageOld.venusLifeExpectancy()).toEqual(
-      "you surpased your life expectancy by 289 years"
+      "you surpased your life expectancy by 34 years"
     );
   });
 
   it(`should return the amount of years you have left on venus`, () => {
     let spaceageYoung = new SpaceAge(30, 79.6);
     expect(spaceageYoung.venusLifeExpectancy()).toEqual(
-      `you have 2 years left on this planet`
+      `you have 79 years left on this planet`
     );
   });
 
   it(`should determine how many years a user has lived passed their life expectancy on mars`, () => {
     let spaceageOld = new SpaceAge(100, 79.6);
     expect(spaceageOld.marsLifeExpectancy()).toEqual(
-      " you have surpased your life expectancy by "
+      "you surpased your life expectancy by 11 years"
     );
   });
 });

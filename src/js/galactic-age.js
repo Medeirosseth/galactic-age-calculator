@@ -37,7 +37,7 @@ export class SpaceAge {
 
   venusLifeExpectancy() {
     let venusLifeExpectancy = Math.floor(79 / 0.62);
-    let timeLeft = venusLifeExpectancy - this.mercuryAge();
+    let timeLeft = venusLifeExpectancy - this.venusAge();
     if (timeLeft < 0) {
       let lifeExpectancy = timeLeft * -1;
       return `you surpased your life expectancy by ${lifeExpectancy} years`;
@@ -46,5 +46,14 @@ export class SpaceAge {
     }
   }
 
-  marsLifeExpectancy() {}
+  marsLifeExpectancy() {
+    let marsLifeExpectancy = Math.floor(79 / 1.88);
+    let timeLeft = marsLifeExpectancy - this.marsAge();
+    if (timeLeft < 0) {
+      let lifeExpectancy = timeLeft * -1;
+      return `you surpased your life expectancy by ${lifeExpectancy} years`;
+    } else {
+      return `you have ${timeLeft} years left on this planet`;
+    }
+  }
 }
